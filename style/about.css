@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freehand&family=Gochi+Hand&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kantumruy+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,600;1,700&family=Konkhmer+Sleokchher&family=Koulen&family=Noto+Sans+Khmer:wght@900&family=Noto+Serif+Khmer:wght@400;500&family=Nunito:ital@1&family=Odor+Mean+Chey&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Siemreap&display=swap');
+
+:root{
+    --description: #565656;
+    --primary-1: #F8D201;
+    --primary-2: #FAF229;
+    --primary-3: #d7be31;
+
+    --second-1: #00ABC9;
+    --second-2: #ffffff;
+    --second-3: #565656;
+
+    --text-1: #ffffff;
+    --text-2: #1b1b1b;
+    --text-3: #565656;
+    --text-4: #A09B9B;
+    --text-5: #C0C0C0;
+    --text-hover: #00abc9;
+    --text-nav-hover: #4195a0;
+    --hover-btn: #00ABC9;
+    --btn: #DB4444;
+    --bg: #f8f8f8;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: "Battambang", system-ui;
+}
+
+.container-menu{
+    width: 100vw;
+    /* height: 85px; */
+    overflow: hidden;
+    background-color: #F8D201;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+
+    & img{
+        width: 190px;
+        padding-left: 50px;
+        padding-top: 14px;
+    }
+
+    & .menu{
+        width: 670px;
+        /* height: 85px; */
+        overflow: hidden;
+        /* background-color: darkolivegreen; */
+        margin-left: 300px;
+    }
+
+    & .btn-search{
+        width: 330px;
+        height: 85px;
+        /* background-color: chocolate; */
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & input{
+            width: 80%;
+            height: 45px;
+            border-radius: 50px;
+            border: solid 10px ;
+            border-color: #d7be31;
+            outline: none;
+            padding-left: 20px;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        & .circle{
+            width: 47px;
+            height: 47px;
+            background-color: #f6dc4d;
+            border-radius: 100%;
+            margin-left: 217px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    }
+
+    & .menu-list{
+        width: 340px;
+        height: 85px;
+        /* overflow: hidden; */
+        /* background-color: rgb(48, 215, 221); */
+        float: right;
+        
+        & ul{
+            /* overflow: hidden; */
+            display: flex;
+            justify-content: space-around;
+            
+            & li{
+                /* overflow: hidden; */
+                list-style: none;
+                transform: translateY(25px);
+    
+                & a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: black;
+                }
+
+                & a:hover{
+                    color: var(--text-hover);
+                }
+            }
+        } 
+         
+    }
+}
+
+/* banner */
+.banner{
+    width: 100vw;
+    height: 482px;
+    /* overflow: hidden; */
+    /* background-color: seagreen;  */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    & .big-title{
+        width: 800px;
+        height: 100px;
+        /* background-color: saddlebrown; */
+        position: absolute;
+        text-align: center;
+        transform: translateY(50px);
+
+        & h1{
+            font-family: "Kantumruy Pro", sans-serif;
+            font-size: 46px;
+            color: white;
+        }
+
+        & p{
+            color: white;
+            font-size: 15px;
+
+        }
+    }
+}
+
+.container-body{
+    width: 92%;
+    overflow: hidden;
+    /* background-color: chocolate; */
+    margin: auto;
+    margin-top: 30px;
+
+    & .body-left
+    {
+        width: 48%;
+        /* height: 500px; */
+        overflow: hidden;
+        /* background-color: darkmagenta; */
+        float: left;
+
+        & .main-des{
+            width: 100%;
+            overflow: hidden;
+            /* background-color: cadetblue; */
+            & h1{
+                
+                color: #bf0000;
+                margin-bottom: 30px;
+            }
+    
+            & p{
+               
+                font-size: 19px;
+                color: var(--second-1);
+                margin-bottom: 30px;
+            }
+        }
+
+        & .sub-des{
+            width: 100%;
+            overflow: hidden;
+            /* background-color: cadetblue; */
+            & p{
+                
+                color: var(--text-3);
+
+                & span{
+                    
+                    color: var(--text-2);
+                }
+            }
+
+            & ul{
+                padding-left: 50px;
+            }
+
+        }
+    }
+
+    & .body-right{
+        width: 50%;
+        height: 380px;
+        background-color: brown;
+        float: right;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+
+/* container-footer */
+.container-footer{
+    width: 100%;
+    height: 410px;
+    background-color: var(--second-2);
+    float: left;
+    margin-top: 50px;
+
+    & .footer-top{
+        width: 92%;
+        height: 85%;
+        /* background-color: #DB4444; */
+        margin: auto;
+
+       & img{
+            transform: translateY(50px);
+            width: 200px;
+       }
+
+       & img:hover{
+            cursor: pointer;
+       }
+
+       & .footer-des{
+        width: 370px;
+        height: 90px;
+        background-color: var(--second-2);
+        transform: translateY(60px);
+
+            & p{
+                
+                font-size: 15px;
+                color: var(--description);
+            }
+       }
+
+       & .icon-footer{
+            width: 205px;
+            height: 60px;
+            /* background-color: aqua; */
+            transform: translateY(75px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .icon-fb{
+                width: 40px;
+                height: 40px;
+                /* background-color: #565656; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 1px solid var(--text-5);
+
+                & a{
+                    text-decoration: none;
+
+                    & .fa-facebook-f{
+                        font-size: 20px;
+                        color: var(--text-5);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                
+            }
+
+            & .icon-fb:hover{
+                background-color: var(--hover-btn);
+            }
+
+            & .icon-fb:hover .fa-facebook-f{
+                color: var(--second-2);
+            }
+
+            & .icon-ig{
+                width: 40px;
+                height: 40px;
+                /* background-color: #565656; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 1px solid var(--text-5);
+
+                & a{
+                    text-decoration: none;
+
+                    & .fa-instagram{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        color: var(--text-5);
+                    }
+                }
+            }
+
+            & .icon-ig:hover{
+                background-color: var(--hover-btn);
+            }
+
+            & .icon-ig:hover .fa-instagram{
+                color: var(--second-2);
+            }
+
+            & .icon-tiktok{
+                width: 40px;
+                height: 40px;
+                /* background-color: #565656; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 1px solid var(--text-5);
+
+                & a{
+                    text-decoration: none;
+
+                    & .fa-tiktok{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        color: var(--text-5);
+                    }
+                }
+            }
+
+            & .icon-tiktok:hover{
+                background-color: var(--hover-btn);
+            }
+
+            & .icon-tiktok:hover .fa-tiktok{
+                color: var(--second-2);
+            }
+
+            & .icon-yt{
+                width: 40px;
+                height: 40px;
+                /* background-color: #565656; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 1px solid var(--text-5);
+
+                & a{
+                    text-decoration: none;
+
+                    & .fa-youtube{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        color: var(--text-5);
+                    }
+                }
+            }
+
+            & .icon-yt:hover{
+                background-color: var(--hover-btn);
+            }
+
+            & .icon-yt:hover .fa-youtube{
+                color: var(--second-2);
+            }            
+       }
+    }
+
+    & .footer-bottom{
+        width: 100%;
+        height: 15%;
+        /* background-color: aqua; */
+        margin: auto;
+        border-top: 1px solid var(--text-5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .fa-copyright{
+            font-size: 22px;
+            margin-right: 10px;
+            color: var(--description);
+        }
+
+        & p{
+            
+            color: var(--description);
+
+        }
+
+        
+    }
+}
